@@ -1,0 +1,14 @@
+C:\Users\furky\Desktop\Life\Subat-4.Odev\bin\Debug\net9.0\Subat-4.Odev.exe
+C:\Users\furky\Desktop\Life\Subat-4.Odev\bin\Debug\net9.0\Subat-4.Odev.deps.json
+C:\Users\furky\Desktop\Life\Subat-4.Odev\bin\Debug\net9.0\Subat-4.Odev.runtimeconfig.json
+C:\Users\furky\Desktop\Life\Subat-4.Odev\bin\Debug\net9.0\Subat-4.Odev.dll
+C:\Users\furky\Desktop\Life\Subat-4.Odev\bin\Debug\net9.0\Subat-4.Odev.pdb
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.AssemblyInfoInputs.cache
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.AssemblyInfo.cs
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.csproj.CoreCompileInputs.cache
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.dll
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\refint\Subat-4.Odev.dll
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.pdb
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.genruntimeconfig.cache
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\ref\Subat-4.Odev.dll

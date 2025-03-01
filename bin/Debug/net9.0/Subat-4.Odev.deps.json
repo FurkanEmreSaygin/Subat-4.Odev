@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Subat-4.Odev/1.0.0": {
+        "runtime": {
+          "Subat-4.Odev.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Subat-4.Odev/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
