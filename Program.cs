@@ -99,11 +99,22 @@ class Program{
         */
         
         // ------------------ Kullanıcıdan isim alıp selam veren bir metot yaz. ---------------//
-   
+        /*
         Console.Write("Lütfen adınızı girin: ");
         string name = Console.ReadLine();
 
         Fonksiyonlar.GreetUser(name);
+        */
 
+        // ------------------ KKullanıcıdan iki sayı alıp çarpan bir metot yaz. ---------------//
+        Console.Write("Enter the first number: ");
+        int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter the second number: ");
+        int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+        int result = Fonksiyonlar.MultiplyNumbers(firstNumber, secondNumber);
+
+        Console.WriteLine($"The product is: {result}");
     }
 }
