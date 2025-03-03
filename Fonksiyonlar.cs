@@ -23,4 +23,10 @@ public class Fonksiyonlar {
         return number1 * number2;
     }
 
+
+    public static string ReverseWord(string word){
+        char[] charArray = word.ToCharArray(); // kelimeyi harflerine bölüyor
+        Array.Reverse(charArray); // harfleri ters çeviriyor
+        return new string(charArray);
+    }
 }

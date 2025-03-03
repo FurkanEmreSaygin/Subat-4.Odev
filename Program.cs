@@ -120,7 +120,7 @@ class Program{
         */
 
         // ------------------ Aynı işlemi int ve double için yapan Overloading metodunu yaz. ---------------//
-
+        /*
         Console.Write("Enter the first int number: ");
         int firstNumber = Convert.ToInt32(Console.ReadLine());
 
@@ -141,6 +141,13 @@ class Program{
         double result2 = Fonksiyonlar.MultiplyNumbers(double1, double2);
 
         Console.WriteLine($"The product is: {result2}");
+        */
+        // ------------------ Girilen bir kelimeyi tersten yazan bir metot yaz.  ---------------//
+        
+        Console.Write("Lütfen bir kelime girin: ");
+        string cümle = Console.ReadLine();
 
+        string reversed = Fonksiyonlar.ReverseWord(cümle);
+        Console.WriteLine($"Kelimenin tersten yazılışı: {reversed}");
     }
 }
