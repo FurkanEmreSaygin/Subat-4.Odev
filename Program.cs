@@ -29,10 +29,19 @@ class Program{
         */
 
         // ----------------------------- Action kullanarak ekrana “Veri Kaydedildi” mesajını yazdır. ---------------//
-
+        /*
         Action DataSaved = () => Console.WriteLine("Data Saved");
 
         DataSaved();
+        */
 
+        // ------------------Predicate kullanarak bir kelimenin 5 harften uzun olup olmadığını kontrol eden bir metot yaz. ---------------//
+
+        Predicate<string> IsItlong = Word => Word.Length > 5;
+        
+        Console.Write("Enter Your Word: ");
+        String Entery = Console.ReadLine();
+
+        Console.WriteLine($"Is your entery longer than 5 letter? : {IsItlong(Entery)}");
     }
 }
