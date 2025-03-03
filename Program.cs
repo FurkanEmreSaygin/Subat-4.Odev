@@ -82,13 +82,19 @@ class Program{
         }
         */
         // ------------------Bir metot oluştur ve ref ile bir değişkenin değerini 2 katına çıkar.  ---------------//
-                
+        /*        
         Console.Write("Pls Enter a Number: ");
         int EntNumber = Convert.ToInt32(Console.ReadLine());
 
         Fonksiyonlar.ikikati(ref EntNumber);
 
         Console.WriteLine($"Your doubled number is: " + EntNumber);
+        */
+        // ------------------params kullanarak 5 farklı sayıyı toplayan bir metot yaz.   ---------------//
+        
+        int sonuc = Fonksiyonlar.Topla(5, 10, 15, 20, 25);
+
+        Console.WriteLine("Toplam: " + sonuc);
 
     }
 }
