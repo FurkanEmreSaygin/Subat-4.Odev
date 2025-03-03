@@ -2,46 +2,39 @@
 
 
 class Program{
+    class Student{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
     
     static void Main(){
 
-        //----------------------------- Bir listenin içindeki tek sayıları filtreleyen bir Lambda fonksiyonu yaz.-------------------//
- 
-        /*
-        List<int> Numbers = new List<int>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 511, 86, 98, 65, 55, 353, 3253}; // Kafamdan bir liste attım
+        List<Student> students = new List<Student>{ // Yeni list elemanları ekliyorum
+            new Student { Name = "Ali", Age = 17 },
+            new Student { Name = "Ayşe", Age = 19 },
+            new Student { Name = "Mehmet", Age = 22 },
+            new Student { Name = "Zeynep", Age = 16 },
+            new Student { Name = "Can", Age = 20 },
+            new Student { Name = "Furkan", Age = 5 },
+            new Student { Name = "Emre", Age = 3 },
+            
+        };
 
-        Console.WriteLine("All numbers: "+ string.Join(", ",Numbers));
-        
-        var OddNumbers = Numbers.Where(number => number %2 != 0).ToList(); // sayılar 2 ye böldüm. 2 ye tam bölünüyorsa çifttir bu yüzden olmayan olarak değiştirdim.
-
+        List<Student> AllStudent = students.ToList();   // listemdeki elemanları bir değişkene çekiyorum
         Console.WriteLine("");
-        Console.WriteLine("Odd Numbers: " + string.Join(", ",OddNumbers));
-        */
-        
-        // ---------------------------- Func kullanarak iki string’i birleştiren bir metot oluştur. ----------------//
-        
-        /*
-        Func<string, string, string> Combine = (str1, str2) => str1 + " " + str2;
+        Console.WriteLine("All Students: ");
 
-        string Combined = Combine("Furkan Emre", "Saygın");
+        foreach (var ogrenci in AllStudent){ // listedeki elemanları teker teker yazdırmak için döngü kurdum
+            Console.WriteLine($"{ogrenci.Name}, {ogrenci.Age} years old");
+        }
 
-        Console.WriteLine($"Hello {Combined}");
-        */
+        List<Student> OlderThan18 = students.Where(o => o.Age > 18).ToList(); // Lambda fonksiyonu kurarak filtreleme yaptım
+     
+        Console.WriteLine("");
+        Console.WriteLine("OLder than 18: ");
 
-        // ----------------------------- Action kullanarak ekrana “Veri Kaydedildi” mesajını yazdır. ---------------//
-        /*
-        Action DataSaved = () => Console.WriteLine("Data Saved");
-
-        DataSaved();
-        */
-
-        // ------------------Predicate kullanarak bir kelimenin 5 harften uzun olup olmadığını kontrol eden bir metot yaz. ---------------//
-
-        Predicate<string> IsItlong = Word => Word.Length > 5;
-        
-        Console.Write("Enter Your Word: ");
-        String Entery = Console.ReadLine();
-
-        Console.WriteLine($"Is your entery longer than 5 letter? : {IsItlong(Entery)}");
+        foreach (var ogrenci in OlderThan18){  // listedeki elemanları teker teker yazdırmak için döngü kurdum
+            Console.WriteLine($"{ogrenci.Name}, {ogrenci.Age} years old");
+        }
     }
 }
