@@ -92,9 +92,18 @@ class Program{
         */
         // ------------------params kullanarak 5 farklı sayıyı toplayan bir metot yaz.   ---------------//
         
+        /*
         int sonuc = Fonksiyonlar.Topla(5, 10, 15, 20, 25);
 
         Console.WriteLine("Toplam: " + sonuc);
+        */
+        
+        // ------------------ Kullanıcıdan isim alıp selam veren bir metot yaz. ---------------//
+   
+        Console.Write("Lütfen adınızı girin: ");
+        string name = Console.ReadLine();
+
+        Fonksiyonlar.GreetUser(name);
 
     }
 }
