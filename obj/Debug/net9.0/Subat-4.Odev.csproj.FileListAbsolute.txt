@@ -12,3 +12,4 @@ C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\refint\Subat-4.Odev.dl
 C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.pdb
 C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.genruntimeconfig.cache
 C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\ref\Subat-4.Odev.dll
+C:\Users\furky\Desktop\Life\Subat-4.Odev\obj\Debug\net9.0\Subat-4.Odev.sourcelink.json
