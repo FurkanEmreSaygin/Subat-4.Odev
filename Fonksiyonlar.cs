@@ -14,9 +14,12 @@ public class Fonksiyonlar {
     public static void GreetUser(string name){
         Console.WriteLine($"Merhaba, {name}! Hoş geldiniz.");
     }
-    
-    public static int MultiplyNumbers(int number1, int number2)
-    {
+    //-----------------int için----------------------//
+    public static int MultiplyNumbers(int number1, int number2){
+        return number1 * number2;
+    }
+    //-----------------double için --------------------//
+    public static double MultiplyNumbers(double number1, double number2){
         return number1 * number2;
     }
 

@@ -107,6 +107,7 @@ class Program{
         */
 
         // ------------------ KKullanıcıdan iki sayı alıp çarpan bir metot yaz. ---------------//
+        /*
         Console.Write("Enter the first number: ");
         int firstNumber = Convert.ToInt32(Console.ReadLine());
 
@@ -116,5 +117,30 @@ class Program{
         int result = Fonksiyonlar.MultiplyNumbers(firstNumber, secondNumber);
 
         Console.WriteLine($"The product is: {result}");
+        */
+
+        // ------------------ Aynı işlemi int ve double için yapan Overloading metodunu yaz. ---------------//
+
+        Console.Write("Enter the first int number: ");
+        int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter the second int number: ");
+        int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+        int result = Fonksiyonlar.MultiplyNumbers(firstNumber, secondNumber);
+
+        Console.WriteLine($"The product is: {result}");
+
+        
+        Console.Write("Enter the first double number: ");
+        double double1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter the second double number: ");
+        double double2 = Convert.ToDouble(Console.ReadLine());
+
+        double result2 = Fonksiyonlar.MultiplyNumbers(double1, double2);
+
+        Console.WriteLine($"The product is: {result2}");
+
     }
 }
