@@ -8,6 +8,34 @@ class Program{
         public int Age { get; set; }
     }
     */
+class Logger
+{
+    private readonly string _filePath;
+
+    // Constructor: Dosya yolunu ayarlıyor.
+    public Logger(string filePath)
+    {
+        _filePath = filePath;
+    }
+
+    // Log mesajını dosyaya yazan yöntem.
+    public void Log(string message)
+    {
+        try
+        {
+            // Mesajı dosyaya ekler, dosya yoksa oluşturur.
+            using (StreamWriter writer = new StreamWriter(_filePath, true))
+            {
+                writer.WriteLine($"{DateTime.Now}: {message}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Log yazılırken bir hata oluştu: {ex.Message}");
+        }
+    }
+}
+
     
     static void Main(){
         
@@ -143,11 +171,20 @@ class Program{
         Console.WriteLine($"The product is: {result2}");
         */
         // ------------------ Girilen bir kelimeyi tersten yazan bir metot yaz.  ---------------//
-        
+        /*
         Console.Write("Lütfen bir kelime girin: ");
         string cümle = Console.ReadLine();
 
         string reversed = Fonksiyonlar.ReverseWord(cümle);
         Console.WriteLine($"Kelimenin tersten yazılışı: {reversed}");
+        */
+
+        // ------------------ Kendi Logger sistemini yaz ve dosyaya log kaydet.  ---------------//
+
+        Logger logger = new Logger("log.txt");
+        logger.Log("Bu bir bilgi mesajıdır.");
+        logger.Log("Bir hata oluştu.");
+        Console.WriteLine("Mesajlar log dosyasına yazıldı.");
+           
     }
 }
